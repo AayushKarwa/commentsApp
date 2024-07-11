@@ -72,16 +72,6 @@ app.get('/comments/:id/edit',(req,res)=>{
     res.render('comments/edit',{comment})
 })
 
-app.get('/tacos',(req,res)=>{
-     res.send("GET /tacos response")
-     console.log(req.body)
-})
-
-app.post('/tacos',(req,res)=>{
-    const{meat,qty}= req.body;
-
-    res.send(`OK,here is your order: ${qty} ${meat}`)
-})
 
 app.listen(3000,(req,res)=>{
     console.log("LISTENING ON PORT 3000!")
