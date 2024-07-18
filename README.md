@@ -31,19 +31,19 @@ These instructions will get you a copy of the project up and running on your loc
 
 1. **Pull the Docker image**
    ```sh
-   docker pull ayushkarwa/route_app
+   docker pull ayushkarwa/routee_app
    ```
 
 2. **Run the Docker container**
    ```sh
-   docker run -p 3000:3000 ayushkarwa/route_app
+   docker run -p 3000:3000 ayushkarwa/routee_app
    ```
 
 3. **Access the application**
    Open your web browser and go to `http://localhost:3000`.
 
 4. **Port config fixes**
-   If port 3000 isn't working try changing it to (3001,3001,...) according to you.
+   If port 3000 isn't working try changing it to (3001,3002,...) according to you.
 
 ### Usage
 
@@ -74,7 +74,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Aayush Karwa - ayushkarwa18@gmail.com - https://www.linkedin.com/in/ayush-karwa-1936a82aa/
+Aayush Karwa - ayushkarwa18@gmail.com - (https://www.linkedin.com/in/aayush-karwa/)
 
 Project Link: [https://github.com/AayushKarwa/commentsApp](https://github.com/AayushKarwa/commentsApp)
 
