@@ -6,7 +6,7 @@ const methodOverride = require('method-override')
 app.set('views', path.join(__dirname,'views'));
 app.set('view engine','ejs');
 app.use(methodOverride('_method'))
-const port = 3000;
+const port = 3002;
 
 app.use(express.urlencoded({ extended: true }))
 let comments = [
@@ -42,6 +42,9 @@ app.get('/comments/new',(req,res)=>{
 
 app.post('/comments',(req,res)=>{
     const{username,comment} = req.body;
+    if (!username || !comment) {
+        return res.render('comments/new', { error: 'Username and comment are required!' });
+    }
     comments.push({username,comment,id: uuid()})
     res.redirect('/comments')    
 })
