@@ -42,7 +42,7 @@ These instructions will get you a copy of the project up and running on your loc
 3. **Access the application**
    Open your web browser and go to `http://localhost:3000`.
 
-4. **PORT CONFIG FIXES**
+4. **Port config fixes**
    If port 3000 isn't working try changing it to (3001,3001,...) according to you.
 
 ### Usage
