@@ -74,7 +74,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Aayush Karwa - ayushkarwa18@gmail.com - https://www.linkedin.com/in/ayush-karwa-1936a82aa/
+Aayush Karwa - ayushkarwa18@gmail.com - (https://www.linkedin.com/in/aayush-karwa/)
 
 Project Link: [https://github.com/AayushKarwa/commentsApp](https://github.com/AayushKarwa/commentsApp)
 
