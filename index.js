@@ -6,7 +6,7 @@ const methodOverride = require('method-override')
 app.set('views', path.join(__dirname,'views'));
 app.set('view engine','ejs');
 app.use(methodOverride('_method'))
-const port = 3004;
+const url = https://comment-app--vert.vercel.app;
 
 app.use(express.urlencoded({ extended: true }))
 let comments = [
@@ -77,6 +77,6 @@ app.get('/comments/:id/edit',(req,res)=>{
 })
 
 
-app.listen(port,(req,res)=>{
+app.listen("https://comment-app--vert.vercel.app",(req,res)=>{
     console.log("LISTENING ON PORT 3000!")
 })
