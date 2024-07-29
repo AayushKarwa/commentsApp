@@ -1,0 +1,36 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Comment</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="title">Comment ID: <%= comment.id %></h1>
+            <h2 class="subtitle"><%= comment.comment %> - <%= comment.username %></h2>
+            <div class="level">
+                <div class="level-left">
+                    <div class="level-item">
+                        <form method="get" action="/comments">
+                            <button class="button is-light">Home</button>
+                        </form>
+                    </div>
+                    <div class="level-item">
+                        <form method="get" action="/comments/<%= comment.id %>/edit">
+                            <button class="button is-primary">Edit</button>
+                        </form>
+                    </div>
+                    <div class="level-item">
+                        <form method="post" action="/comments/<%= comment.id %>?_method=DELETE">
+                            <button class="button is-danger">Delete</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
