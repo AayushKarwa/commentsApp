@@ -32,7 +32,7 @@ let comments = [
     }
 ]
 
-app.get('/comments',(req,res)=>{
+app.get('/',(req,res)=>{
     res.render('comments/index',{comments})
 })
 
@@ -46,7 +46,7 @@ app.post('/comments',(req,res)=>{
         return res.render('comments/new', { error: 'Username and comment are required!' });
     }
     comments.push({username,comment,id: uuid()})
-    res.redirect('/comments')    
+    res.redirect('/')    
 })
 
 app.get('/comments/:id',(req,res)=>{
@@ -61,14 +61,14 @@ app.patch('/comments/:id',(req,res)=>{
     console.log(newCommentText);
     const foundComment = comments.find(c => c.id === id)
     foundComment.comment = newCommentText;
-    res.redirect('/comments')
+    res.redirect('/')
     
 })
 
 app.delete('/comments/:id',(req,res)=>{
     const{id} = req.params;
      comments = comments.filter(c=> c.id !== id);
-    res.redirect('/comments');  
+    res.redirect('/');  
 })
 app.get('/comments/:id/edit',(req,res)=>{
     const{id}=req.params;
